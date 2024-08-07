@@ -47,60 +47,72 @@ ul li {
     background-position: center;
     background-size: cover;
     background-color: #020b18e0;
-    background-blend-mode:overlay;
+    background-blend-mode: overlay;
     color: #fff;
     display: flex;
     flex-direction: column;
 }
-.nav-btn{
+
+.nav-btn {
     padding: 10px;
 }
-.nav-btn li{
+
+.nav-btn li {
     list-style: none;
     display: flex;
     margin-bottom: 10px;
 }
-.nav-btn li a{
+
+.nav-btn li a {
     text-decoration: none;
     color: #ffffff8e;
 }
+
 .navigation .nav-btn i {
     margin-right: 5px;
     font-size: 12px;
     color: rgb(200, 194, 194);
 }
-.nav-btn a:hover{
+
+.nav-btn a:hover {
     cursor: pointer;
     background-color: rgba(128, 128, 128, 0.236);
 }
-.nav-btn h3{
+
+.nav-btn h3 {
     color: #ffffffbe;
 }
-#i{
+
+#i {
     margin-left: 5px;
 }
-#search{
+
+#search {
     padding: 5px;
     background-color: rgb(255, 108, 108);
     border-radius: 30px;
     cursor: pointer;
 }
-.wrapper{
+
+.wrapper {
     display: flex;
     /* width: 100%; */
 }
-main{
+
+main {
     width: 100%;
 }
-.main{
+
+.main {
     display: flex;
-    justify-content:space-between;
+    justify-content: space-between;
     align-items: center;
     margin-top: 20px;
     box-shadow: 0px 0px 3px gray;
     padding: 10px;
 }
-#car{
+
+#car {
     margin-left: 10px;
     margin-right: 10px;
     color: pink;
@@ -108,20 +120,24 @@ main{
     font-size: 20px;
     padding: 10px;
 }
-.main h2{
+
+.main h2 {
     font-weight: normal;
 }
-.heading{
+
+.heading {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-.btn-main{
+
+.btn-main {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-.btn-main button{
+
+.btn-main button {
     border: none;
     background-color: #49afe8;
     padding: 10px;
@@ -130,7 +146,8 @@ main{
     font-weight: 500;
     cursor: pointer;
 }
-#fvt{
+
+#fvt {
     font-size: 12px;
     margin-right: 20px;
     background-color: #4c5256;
@@ -139,7 +156,8 @@ main{
     border-radius: 5px;
     align-items: center;
 }
-.grid{
+
+.grid {
     max-width: 1300px;
     display: grid;
     padding: 10px;
@@ -147,30 +165,138 @@ main{
     gap: 10px;
 
 }
-.btext h4{
 
+.bandwidth {
+    box-shadow: 0px 0px 5px gray;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.btext h4 {
     font-weight: normal;
 }
-.btext{
+
+.btext {
     display: flex;
     justify-content: space-between;
     align-items: center;
     border-bottom: 1px solid rgba(128, 128, 128, 0.5);
 }
-.btext .tab{
+
+.btext .tab {
     background-color: #113c79;
     color: white;
     padding: 4px;
     border-radius: 4px;
+    margin: 10px;
+    cursor: pointer;
 }
-.tab2{
-    color: #113c79;
-}
-.gen{
+
+.sub {
     display: flex;
-    justify-content: space-between;
+    align-items: center;
 }
-.sub-box{
+
+.sub h4 {
+    font-size: 24px;
+    font-weight: normal;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.sub p {
+    font-size: 14px;
+    color: rgba(128, 128, 128, 0.705);
+    margin-left: 10px;
+}
+
+.tab2 {
+    color: #113c79;
+    cursor: pointer;
+    padding: 4px;
+    border-radius: 4px;
+    margin: 10px;
+    transition: all 0.1s ease-in;
+}
+.tab2:hover{
+    background-color: #113c79;
+    color: white;
+}
+
+.graph {
     display: grid;
     grid-template-columns: auto auto;
+    grid-gap: 20px;
+}
+
+.tabb {
+    display: flex;
+    align-items: center;
+}
+
+.line1 {
+    width: 100%;
+    background: linear-gradient(90deg, red 70%, rgba(112, 111, 111, 0.295) 70%);
+    height: 6px;
+    border-radius: 90px;
+}
+
+.line2 {
+    width: 100%;
+    background: linear-gradient(90deg, rgb(0, 255, 13) 30%, rgba(112, 111, 111, 0.295) 70%);
+    height: 6px;
+    border-radius: 90px;
+}
+
+.line3 {
+    width: 100%;
+    background: linear-gradient(90deg, rgba(0, 4, 255, 0.74) 71%, rgba(112, 111, 111, 0.295) 70%);
+    height: 6px;
+    border-radius: 90px;
+}
+
+.line4 {
+    width: 100%;
+    background: linear-gradient(90deg, rgba(218, 58, 58, 0.658) 70%, rgba(112, 111, 111, 0.295) 70%);
+    height: 6px;
+    border-radius: 90px;
+}
+
+.grid {
+    max-width: 1300px;
+    display: grid;
+    padding: 10px;
+    grid-template-columns: 1fr 1fr; /* Ensures two equal columns */
+    gap: 10px;
+}
+
+.bandwidth {
+    box-shadow: 0px 0px 10px gray;
+    padding: 10px;
+    position: relative; /* Allows positioning of child elements */
+}
+
+.image {
+    grid-column: span 2; /* Makes the image span across both columns */
+    display: flex;
+    justify-content: center; /* Centers the image horizontally */
+    align-items: center; /* Centers the image vertically */
+    position: relative;
+}
+
+.image img {
+    max-width: 100%; /* Ensures the image scales with the container */
+    height: auto; /* Maintains the aspect ratio */
+}
+.im-text{
+    position: absolute;
+    top: -10px;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+.im-text p{
+    font-size: 14px;
+    color: rgba(128, 128, 128, 0.719);
+}
+.im-text i,.span{
+    color: #dd5600;
 }
