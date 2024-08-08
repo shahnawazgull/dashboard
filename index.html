@@ -16,7 +16,7 @@
         <div class="header-con">
             <div class="text-con">
                 <h3>Architect</h3>
-                <i class="fa-solid fa-bars"></i>
+                <i class="fa-solid fa-bars" id="ic"></i>
                 <i class="fa-solid fa-magnifying-glass" id="search"></i>
             </div>
             <nav>
@@ -30,7 +30,8 @@
             </nav>
         </div>
     </header>
-    <div class="wrapper">
+
+    <main>
         <div class="navigation">
             <div class="nav-btn">
                 <h3>PRO Version</h3>
@@ -87,7 +88,7 @@
                 </li>
             </div>
         </div>
-        <main>
+        <div class="container">
             <div class="main">
                 <div class="heading">
                     <i class="fa-solid fa-car" id="car"></i>
@@ -103,7 +104,7 @@
             </div>
 
             <div class="grid">
-                <div class="bandwidth">
+                <div class="bandwidth grid-box">
                     <div class="btext">
                         <h4><i class="fa-solid fa-rocket"></i> Bandwidth Reports</h4>
                         <div class="tabb">
@@ -148,17 +149,16 @@
 
                             </div>
                         </div>
-                        <div class="image">
-                            <div class="im-text">
-                                <p><i class="fa-solid fa-arrow-right fa-rotate-180"></i><span class="span">
-                                        175.5%</span> increased server resources</p>
-                            </div>
-                            <img src="chart.png" alt="">
+                    </div>
+                    <div class="image">
+                        <div class="im-text">
+                            <p><i class="fa-solid fa-arrow-right fa-rotate-180"></i><span class="span">
+                                    175.5%</span> increased server resources</p>
                         </div>
-
+                        <img src="chart.png" alt="">
                     </div>
                 </div>
-                <div class="sub-chart">
+                <div class="sub-chart grid-box">
                     <div class="report">
                         <i class="fa-solid fa-gear" id="gear"></i>
                         <div class="chart-text">
@@ -176,7 +176,7 @@
                             <p>Profiles</p>
                         </div>
                         <div class="sub-text">
-                            <p> 62.7%</p><i class="fa-solid fa-arrow-left"></i>
+                            <p><i class="fa-solid fa-arrow-left"></i> 62.7% </p>
                         </div>
                     </div>
                     <div class="report report-3">
@@ -190,7 +190,7 @@
                         </div>
                     </div>
                     <div class="report report-4">
-                        <i class="fa-solid fa-gear" id="gear2"></i>
+                        <i class="fa-regular fa-eye" id="gear2"></i>
                         <div class="chart-text">
                             <h1>45.8k</h1>
                             <p>Total Views</p>
@@ -200,8 +200,72 @@
                         </div>
                     </div>
                 </div>
-        </main>
-    </div>
+        
+        
+        
+                <div class="trade grid-box">
+                    <div class="sub-trade trade1">
+                        <i class="fa-solid fa-gear"></i>
+                        <div class="trade-text">
+                            <h1>45.8k</h1>
+                            <p>Total Views</p>
+                        </div>
+                        <div class="icon-text ">
+                            <p><i class="fa-solid fa-angle-up"></i> 175.5%</p>
+                        </div>
+                        <div class="img">
+                            <img src="chart1.png" alt="">
+                        </div>
+                    </div>
+                    <div class="sub-trade trade2">
+                        <i class="fa-solid fa-laptop-file"></i>
+                        <div class="trade-text">
+                            <h1>5.82k</h1>
+                            <p>Reports Submitted</p>
+                        </div>
+                        <div class="t-text">
+                            <i class="fa-solid fa-chevron-down"></i>
+                            <p> 62.7%</p>
+                        </div>
+                        <div class="img">
+                            <img src="magicpattern-svg-chart-1723116698993.png" alt="">
+                        </div>
+                    </div>
+        
+                </div>
+                <div class="lg-trade grid-box">
+                    <div class="lg-sub">
+                        <i class="fa-regular fa-heart"></i>
+                        <div class="lg-text">
+                            <h1>4517.82</h1>
+                            <p>Active Social Profiles</p>
+                        </div>
+                        <div class="sm-text">
+                            <p>Down by <i class="fa-solid fa-chevron-down" id="la"></i> <span class="spa">54.5% </span>from 30
+                                days ago</p>
+                        </div>
+                        <div class="img">
+                            <img src="chart4.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+    </main>
+    <script>
+        var icon = document.querySelector("#ic");
+        var navbar = document.querySelector(".navigation");
+        var flag = 0;
+        icon.addEventListener("click", function () {
+            if (flag == 0) {
+                navbar.style.display = "none";
+                flag = 1;
+            } else {
+                navbar.style.display = "block";
+                flag = 0;
+            }
+        })
+    </script>
 </body>
 
 </html>
