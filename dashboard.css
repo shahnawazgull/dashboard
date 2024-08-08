@@ -12,7 +12,7 @@ body {
     display: flex;
     justify-content: space-between;
     padding: 10px;
-    background: linear-gradient(rgb(210, 180, 185), rgb(255, 108, 108));
+    background: linear-gradient(90deg,rgb(210, 180, 185), #fc838c 30%);
 }
 
 ul {
@@ -29,19 +29,24 @@ ul li {
 .text-con {
     color: #fff;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
-    font-size: 17px;
+    font-size: 22px;
+    
 }
-
+.text-con h3{
+    font-style: italic;
+    font-weight: normal;
+    font-family:sans-serif;
+}
 .text-con i {
-    margin-left: 60px;
+    margin-left: 90px;
     margin-top: 6px;
 }
 
 .navigation {
     height: 100vh;
-    width: 160px;
+    width: 300px;
     background: url("https://images.unsplash.com/photo-1466442929976-97f336a657be?q=80&w=2787&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
     background-repeat: no-repeat;
     background-position: center;
@@ -60,27 +65,38 @@ ul li {
 .nav-btn li {
     list-style: none;
     display: flex;
-    margin-bottom: 10px;
 }
 
 .nav-btn li a {
     text-decoration: none;
     color: #ffffff8e;
+    margin-left: 10px;
+    transition: all 0.1s ease-in;
+    padding: 10px;
 }
 
 .navigation .nav-btn i {
     margin-right: 5px;
-    font-size: 12px;
+    font-size: 16px;
     color: rgb(200, 194, 194);
 }
 
 .nav-btn a:hover {
     cursor: pointer;
     background-color: rgba(128, 128, 128, 0.236);
+    color: white;
+    width: 100%;
 }
-
+.active{
+    cursor: pointer;
+    background-color: rgba(128, 128, 128, 0.236);
+    color: #ffff;
+    width: 100%;
+}
 .nav-btn h3 {
     color: #ffffffbe;
+    font-weight: normal;
+    font-size: 16px;
 }
 
 #i {
@@ -96,9 +112,11 @@ ul li {
 
 .wrapper {
     display: flex;
-    /* width: 100%; */
 }
-
+.text{
+    align-items: center;
+    margin-left: 20px;
+}
 main {
     width: 100%;
 }
@@ -108,7 +126,7 @@ main {
     justify-content: space-between;
     align-items: center;
     margin-top: 20px;
-    box-shadow: 0px 0px 3px gray;
+    /* box-shadow: 0px 0px 3px gray; */
     padding: 10px;
 }
 
@@ -123,6 +141,7 @@ main {
 
 .main h2 {
     font-weight: normal;
+    color: rgba(0, 0, 0, 0.64);
 }
 
 .heading {
@@ -136,7 +155,6 @@ main {
     justify-content: space-between;
     align-items: center;
 }
-
 .btn-main button {
     border: none;
     background-color: #49afe8;
@@ -151,10 +169,13 @@ main {
     font-size: 12px;
     margin-right: 20px;
     background-color: #4c5256;
-    color: #fff;
-    padding: 5px;
     border-radius: 5px;
     align-items: center;
+    padding: 10px;
+    border-radius: 5px;
+    color: white;
+    font-weight: 500;
+    cursor: pointer;
 }
 
 .grid {
@@ -270,7 +291,7 @@ main {
 }
 
 .bandwidth {
-    box-shadow: 0px 0px 10px gray;
+    box-shadow: 0px 0px 1px gray;
     padding: 10px;
     position: relative; /* Allows positioning of child elements */
 }
@@ -299,4 +320,78 @@ main {
 }
 .im-text i,.span{
     color: #dd5600;
+}
+.sub-chart{
+    display: grid;
+    grid-template-columns: repeat(2,200px);
+    max-width: 400px;
+    grid-gap: 10px;
+    height: 250px;
+    width: 100%;
+}
+.report{
+    background-color: #29cbe9;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.134);
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+#gear{
+    background-color: #fff;
+    padding: 10px;
+    color: #29cbe9;
+    border-radius: 50px;
+    font-size: 30px;
+}
+.chart-text p{
+    color: rgba(255, 255, 255, 0.654);
+    margin-bottom: 10px;
+
+}
+.report-2{
+    background-color: #4a4576;
+}
+.report-3{
+    background-color: #16a86c;
+}
+.report-4{
+    background-color: #ff1d4f;
+}
+#desk{
+    background-color: #fff;
+    padding: 10px;
+    color: #feafad;
+    border-radius: 10px;
+    font-size: 30px;
+}
+.sub-text{
+    display: flex;
+    align-items: center;
+}
+.sub-text p{
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+.fa-graduation-cap{
+    background-color:#344648 ;
+    padding: 10px;
+    color: #fff;
+    border-radius: 10px;
+    font-size: 30px;
+}
+#gear2{
+    background-color:#ffc6bc;
+    padding: 10px;
+    color: #fff;
+    border-radius: 50px;
+    font-size: 30px;
+}
+.report i{
+    margin-bottom: 10px;
 }
